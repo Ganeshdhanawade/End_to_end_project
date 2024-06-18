@@ -4,19 +4,18 @@ from typing import List
 PROJECT_NAME = "Machine Learning Project"
 VERSION = "0.0.1"
 DESCRIPTION = "This is our machine learning project inmodular coding"
-AUTHOR_NAME = "Shivan Kumar"
-AUTHOR_EMIL = "dummy@successanalytics.ai"
+AUTHOR_NAME = "Ganesh Dhanawade"
+AUTHOR_EMIL = "dhanawadeganesh386@gmail.com"
 
 REQUIREMENTS_FILE_NAME = "requirements.txt"
 
 HYPHEN_E_DOT = "-e ."
 # Requriments.txt file open
-# read
+# readgit
 # \n ""
 def get_requirements_list()->List[str]:
     with open(REQUIREMENTS_FILE_NAME) as requriment_file:
         requriment_list = requriment_file.readlines()
-        print(requriment_file)
         requriment_list = [requriment_name.replace("\n", "") for requriment_name in requriment_list]
 
         if HYPHEN_E_DOT in requriment_list:
